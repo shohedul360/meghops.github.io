@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeghOps | Cloud Security Simplified</title>
-    <meta name="description" content="Cloud Security Posture Management in 360 Degree.">
+    <meta
+      name="description"
+      content="Cloud Security Posture Management in 360 Degree."
+    />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://app.meghops.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="MeghOps | Cloud Security Simplified">
-    <meta property="og:description" content="Cloud Security Posture Management in 360 Degree.">
-    <meta property="og:image" content="/images/meta_thumbnail.jpg">
+    <meta property="og:url" content="https://meghops.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MeghOps | Cloud Security Simplified" />
+    <meta
+      property="og:description"
+      content="Cloud Security Posture Management in 360 Degree."
+    />
+    <meta
+      property="og:image"
+      content="https://meghops.io/images/meta_thumbnail.jpg"
+    />
     <link
       rel="shortcut icon"
       href="./images/logo-icon.png"
@@ -70,6 +79,12 @@
                       class="text-gray-600 dark:text-gray-200 hover:text-gray-500 transition duration-300 text-sm"
                     >
                       About Us
+                    </a>
+                    <a
+                      href="cspm.html"
+                      class="text-gray-600 dark:text-gray-200 hover:text-gray-500 transition duration-300 text-sm"
+                    >
+                      Who needs CSPM
                     </a>
                     <a
                       href="//docs.meghops.com"
@@ -189,6 +204,12 @@
                   About Us
                 </a>
                 <a
+                  href="cspm.html"
+                  class="py-4 cursor-pointer text-sm text-gray-800 dark:text-gray-300 hover:text-gray-500 block"
+                >
+                  Who needs CSPM
+                </a>
+                <a
                   href="//docs.meghops.com"
                   class="py-4 cursor-pointer text-sm text-gray-800 dark:text-gray-300 hover:text-gray-500 block"
                 >
@@ -295,16 +316,15 @@
                       <img
                         class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0 dark:brightness-50"
                         src="./images/avatar.jpg"
-  
                       />
                       <div class="text-center space-y-2 sm:text-left">
                         <div class="space-y-0.5">
-                          <p class="text-lg text-black dark:text-white font-semibold">
+                          <p
+                            class="text-lg text-black dark:text-white font-semibold"
+                          >
                             Muntasir Azgar
                           </p>
-                          <p class="text-slate-500 font-medium">
-                            CEO
-                          </p>
+                          <p class="text-slate-500 font-medium">CEO</p>
                         </div>
                       </div>
                     </div>
@@ -317,12 +337,12 @@
                       />
                       <div class="text-center space-y-2 sm:text-left">
                         <div class="space-y-0.5">
-                          <p class="text-lg text-black dark:text-white font-semibold">
+                          <p
+                            class="text-lg text-black dark:text-white font-semibold"
+                          >
                             Rifat Hassan
                           </p>
-                          <p class="text-slate-500 font-medium">
-                            COO
-                          </p>
+                          <p class="text-slate-500 font-medium">COO</p>
                         </div>
                       </div>
                     </div>
@@ -332,16 +352,15 @@
                       <img
                         class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0 dark:brightness-50"
                         src="./images/avatar.jpg"
-  
                       />
                       <div class="text-center space-y-2 sm:text-left">
                         <div class="space-y-0.5">
-                          <p class="text-lg text-black dark:text-white font-semibold">
+                          <p
+                            class="text-lg text-black dark:text-white font-semibold"
+                          >
                             Abdullah Naser
                           </p>
-                          <p class="text-slate-500 font-medium">
-                            Tech Lead
-                          </p>
+                          <p class="text-slate-500 font-medium">Tech Lead</p>
                         </div>
                       </div>
                     </div>
@@ -351,11 +370,12 @@
                       <img
                         class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0 dark:brightness-50"
                         src="./images/avatar.jpg"
-  
                       />
                       <div class="text-center space-y-2 sm:text-left">
                         <div class="space-y-0.5">
-                          <p class="text-lg text-black dark:text-white font-semibold">
+                          <p
+                            class="text-lg text-black dark:text-white font-semibold"
+                          >
                             Faisal Al Mamun
                           </p>
                           <p class="text-slate-500 font-medium">
@@ -370,11 +390,12 @@
                       <img
                         class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0 dark:brightness-50"
                         src="./images/avatar.jpg"
-  
                       />
                       <div class="text-center space-y-2 sm:text-left">
                         <div class="space-y-0.5">
-                          <p class="text-lg text-black dark:text-white font-semibold">
+                          <p
+                            class="text-lg text-black dark:text-white font-semibold"
+                          >
                             Shakil Hossain
                           </p>
                           <p class="text-slate-500 font-medium">
@@ -385,8 +406,8 @@
                     </div>
                     <div></div>
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -484,18 +505,18 @@
     </div>
 
     <script>
-      document.addEventListener("alpine:init", () => {
-        Alpine.store("darkMode", {
+      document.addEventListener('alpine:init', () => {
+        Alpine.store('darkMode', {
           init() {
             if (
-              localStorage.theme === "dark" ||
-              (!("theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
+              localStorage.theme === 'dark' ||
+              (!('theme' in localStorage) &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches)
             ) {
-              document.documentElement.classList.add("dark");
+              document.documentElement.classList.add('dark');
               this.on = true;
             } else {
-              document.documentElement.classList.remove("dark");
+              document.documentElement.classList.remove('dark');
               this.on = false;
             }
           },
@@ -504,11 +525,11 @@
 
           toggle() {
             let value = this.on;
-            localStorage.theme = value ? "light" : "dark";
+            localStorage.theme = value ? 'light' : 'dark';
             if (!value) {
-              document.documentElement.classList.add("dark");
+              document.documentElement.classList.add('dark');
             } else {
-              document.documentElement.classList.remove("dark");
+              document.documentElement.classList.remove('dark');
             }
             this.on = !value;
           },
