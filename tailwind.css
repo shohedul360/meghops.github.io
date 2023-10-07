@@ -32,6 +32,19 @@ html {
     .gradient-text {
       @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-red-600 to-primary;
     }
+
+    .navbar-active #hamburger div:first-child {
+      @apply translate-y-1.5 rotate-45;
+    }
+    .navbar-active #hamburger div:last-child {
+        @apply -translate-y-1 -rotate-45;
+    }
+    .navbar-active #layer {
+        @apply origin-top scale-y-100;
+    }
+    .navbar-active #navlinks {
+        @apply visible block scale-100 opacity-100 lg:flex lg:translate-y-0;
+    }
   
 
   

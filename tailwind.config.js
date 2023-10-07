@@ -21,7 +21,8 @@ module.exports = {
         low: '#17B978',
         medium: '#0AA1DD',
         high: '#FEB139',
-        critical: '#F55353'
+        critical: '#F55353',
+        gray: colors.slate,
       },
     },
   },
