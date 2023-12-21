@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
       },
       colors: {
         green: colors.emerald,
@@ -23,6 +23,9 @@ module.exports = {
         high: '#FEB139',
         critical: '#F55353',
         gray: colors.slate,
+        seashell: '#F4F3F4',
+        mortal: '#515455',
+        
       },
     },
   },
