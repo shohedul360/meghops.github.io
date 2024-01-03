@@ -39,7 +39,7 @@
 
   </head>
   <body x-data="{videoModal: false}" :class="{'overflow-hidden': videoModal}" class="bg-seashell">
-    <div class="relative w-full border-b border-mortal border-opacity-30">
+    <div class="relative w-full ">
       <header x-data="{mobileNav: false}" class="max-w-7xl relative z-20 mx-auto">
         <nav class="flex items-center justify-between lg:px-8 py-4 px-5" aria-label="Global">
           <div class="flex lg:flex-1">
@@ -56,7 +56,7 @@
               </svg>
             </button>
           </div>
-          <div class="hidden lg:flex lg:gap-x-8 -mb-3">
+          <div class="hidden lg:flex lg:gap-x-6 -mb-3">
             <div 
               class="relative" 
               x-data="{show: false}"
@@ -75,7 +75,7 @@
               <div 
                 class="absolute top-full left-0 py-6 px-4 bg-white shadow-md rounded-lg flex flex-col space-y-3"
                 x-show="show"
-                x-transition
+                x-transition.duration.500ms
                 x-cloak
               >
                 <a href="#" class="flex hover:text-primary items-center space-x-2 text-sm truncate text-gray-600">
@@ -118,10 +118,16 @@
             <a href="#" class="text-sm text-mortal hover:text-primary transition font-semibold leading-6 py-2">Documentation</a>
           </div>
 
-          <div class="ml-8 lg:ml-12 -mb-3 hidden lg:block">
+
+          <div class="ml-8 lg:ml-12 -mb-3 hidden lg:flex items-center space-x-4">
             <a href="#" class="px-5 py-2.5 text-sm bg-mortal text-white rounded-full font-semibold inline-block">
               Sign up
             </a>
+            <button class="text-mortal rounded-full border-2 border-mortal inline-flex items-center justify-center p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+              </svg>              
+            </button>
           </div>
  
         </nav>
@@ -133,7 +139,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="./images/logo.png" alt="">
+                <img class="h-16 w-auto" src="./images/meghops-full-logo.png" alt="">
               </a>
               <button @click="mobileNav = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Close menu</span>
@@ -158,35 +164,10 @@
           </div>
         </div>
       </header>
-      <div class="absolute z-10 top-10 right-0">
-        <img src="./images/cuircit-cropped.png" class="w-44" alt="">
-      </div>
-
-
-      <!-- <div class="relative isolate px-6 pt-14 pb-14 lg:px-8 max-w-7xl mx-auto">
-
-        <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-between">
-          <div>
-            <h1 class="font-medium text-3xl lg:text-4xl mb-5 text-primary tracking-wider">Head in the Clouds?</h1>
-            <p class="font-light text-xl mb-8 text-mortal tracking-widest">
-              Experience secure 360° Monitoring <br>
-              with Our Cloud Security Automated Solution
-            </p>
-
-            <div>
-              <a href="#" class="uppercase text-base underline font-medium text-mortal hover:no-underline">Learn more</a>
-            </div>
-          </div>
-          <div class="mt-5 lg:mt-0">
-            <img src="./images/lock.png" class="max-h-96 lg:max-h-[420px] object-contain" alt="">
-
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <main>
-      <div class="relative isolate px-6 pt-14 pb-14 lg:px-8 max-w-7xl mx-auto">
+      <div class="relative isolate px-6 pt-14 pb-14 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-between">
           <div>
             <h1 class="font-bold text-3xl mb-5 lg:text-5xl text-primary">Head in the Clouds?</h1>
@@ -194,9 +175,10 @@
               Experience secure 360° Monitoring <br>
               with Our Cloud Security Automated Solution
             </p>
-            <div>
-              <a href="#" class="px-5 py-2.5 text-sm bg-mortal text-white rounded-full font-semibold inline-block">
-                Schedule a Demo
+            <div class="bg-white rounded-full flex items-center p-2 w-fit shadow-2xl">
+              <input type="text" class="border-transparent focus:border-transparent focus:ring-transparent placeholder:text-gray-400" placeholder="Enter your email">
+              <a href="#" class="px-5 truncate py-2.5 text-sm bg-mortal text-white rounded-full font-semibold inline-block ml-3">
+                Start Free
               </a>
             </div>
           </div>
@@ -206,29 +188,26 @@
         </div>
       </div>
 
-      <div class="bg-white px-5 py-8 relative">
-        <p class="text-gray-600 px-5 absolute bottom-full left-0 right-0 max-w-7xl mx-auto mb-3 flex items-center">
+      <div class="px-5 relative">
+        <p class="text-gray-600 px-5 absolute bottom-full mt-2 left-0 right-0 max-w-7xl mx-auto mb-3 flex items-center font-medium">
           Trusted by the leading organizations <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 ml-1 h-4 text-primary">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
           </svg>
           
         </p>
         <div class="max-w-7xl mx-auto px-5">
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="flex items-center justify-center rounded-xl bg-primary p-10 overflow-hidden">
-              <img src="./images/logos/aamarpay_logo.png" class="object-contain w-[70%] grayscale" alt="">
+          <div class="flex items-center justify-center flex-wrap">
+            <div class="flex items-center justify-center w-1/2 md:w-1/3 lg:w-1/4 p-4 sm:px-8">
+              <img src="./images/logos/aamarpay_logo.png" class="object-contain" alt="">
             </div>
-
-            <div class="flex items-center justify-center rounded-xl bg-primary p-10 overflow-hidden">
-              <img src="./images/logos/ostad-white.png" class="object-contain w-[70%] grayscale" alt="">
+            <div class="flex items-center justify-center w-1/2 md:w-1/3 lg:w-1/4 p-4 sm:px-8">
+              <img src="./images/logos/ostad-transparent.png" class="object-contain" alt="">
             </div>
-
-            <div class="flex items-center justify-center rounded-xl bg-primary p-10 overflow-hidden">
-              <img src="./images/logos/lifespring-logo.png" class="object-contain w-[70%] grayscale" alt="">
+            <div class="flex items-center justify-center w-1/2 md:w-1/3 lg:w-1/4 p-4 sm:px-8">
+              <img src="./images/logos/lifespring-logo.png" class="object-contain" alt="">
             </div>
-
-            <div class="flex items-center justify-center rounded-xl bg-primary p-10 overflow-hidden">
-              <img src="./images/logos/skilledin.png" class="object-contain w-[70%] grayscale" alt="">
+            <div class="flex items-center justify-center w-1/2 md:w-1/3 lg:w-1/4 p-4 sm:px-8">
+              <img src="./images/logos/skilledin.png" class="object-contain" alt="">
             </div>
           </div>
         </div>
