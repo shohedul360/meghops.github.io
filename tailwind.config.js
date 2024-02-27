@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Ubuntu', 'sans-serif'],
       },
       colors: {
         green: colors.emerald,
@@ -25,7 +25,7 @@ module.exports = {
         gray: colors.slate,
         seashell: '#F4F3F4',
         mortal: '#515455',
-        
+        dark: '#07090D',      
       },
     },
   },
