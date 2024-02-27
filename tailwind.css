@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +12,9 @@ html {
     }
   }
   
+  html, body {
+    overflow-x: hidden !important;
+  }
 
 @layer components {
     .btn {
@@ -25,7 +28,13 @@ html {
       @apply text-primary border border-primary hover:bg-primary disabled:hover:bg-transparent disabled:hover:text-primary bg-transparent hover:text-white disabled:cursor-not-allowed disabled:opacity-80 disabled:border-primary/60;
     }
     .primary-button {
-      @apply tracking-wide font-semibold bg-primary text-white py-2 px-4 text-sm rounded-lg hover:bg-opacity-80 transition-all duration-300 ease-in-out flex items-center justify-center focus:ring ring-primary ring-opacity-20 focus:outline-none space-x-3 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-red-300;
+      @apply text-sm bg-gradient-to-r from-[#FF0000] to-[#B82A2C] hover:brightness-95 hover:scale-105 transition-all duration-200 text-white rounded-2xl font-medium inline-block;
+      border: solid 1px transparent;
+              background-image: linear-gradient(#FF0000, #B82A2C), radial-gradient(circle at top left, #FFFFFF4A,#FFFFFF00);
+              background-origin: border-box;
+              background-clip: content-box, border-box;
+
+
     }
 
   
