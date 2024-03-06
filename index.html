@@ -43,20 +43,19 @@
       <header x-data="{mobileNav: false}" class="max-w-7xl relative z-20 mx-auto">
         <nav class="flex items-center justify-between lg:px-8 py-5 px-5" aria-label="Global">
           <div class="flex">
-            <a href="#" class="p-1.5">
+            <a href="/" class="p-1.5">
               <span class="sr-only">Meghops </span>
-              <img class="h-10 w-auto" src="./images/logo-new.png" alt="">
+              <img class="h-12 w-auto" src="./images/logo-new.png" alt="">
             </a>
           </div>
           <div class="hidden lg:flex lg:gap-x-6 -mb-3 bg-[#1D1F23] border border-gray-600 xl:mx-10 px-8 rounded-3xl py-1">
             <div 
               class="relative" 
               x-data="{show: false}"
-              @click.away="show = false"
-              
+              @click.away="show = false" 
             >
               <a 
-                href="#" 
+                href="./product.html" 
                 class="text-sm text-white hover:text-primary transition font-semibold leading-6 inline-flex items-center py-2"
                 @mouseover="show = true"
 
@@ -291,16 +290,16 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate">About Us</a>
-            <a href="#" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Services</a>
-            <a href="#" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate">Contact Us</a>
-            <a href="#" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Blog</a>
-            <a href="#" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Documentation</a>
+            <a href="./services.html" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Services</a>
+            <a href="https://blog.meghops.io/" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Blog</a>
+            <a href="https://docs.meghops.com/" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2">Documentation</a>
+            <a href="./about.html" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate">About Us</a>
+            <a href="./contact.html" class="text-sm text-white hover:text-gray-300 transition font-semibold leading-6 py-2 truncate">Contact Us</a>
           </div>
 
 
           <div class="ml-8 lg:ml-12 -mb-3 items-center space-x-4 flex">
-            <a href="#" class="primary-button truncate hidden lg:block">
+            <a href="./trial.html" class="primary-button truncate hidden lg:block">
               <span class="px-5 py-2.5 inline-block">Get started</span>
             </a>
             <button 
@@ -370,7 +369,7 @@
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-16 w-auto" src="./images/meghops-full-logo.png" alt="">
+                <img class="h-16 w-auto" src="./images/LOGO-01.png" alt="">
               </a>
               <button @click="mobileNav = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Close menu</span>
@@ -402,7 +401,7 @@
 
       <!-- Hero -->
       <section class="py-12 lg:py-20 relative">
-        <div class="max-w-7xl mx-auto px-5 relative z-10">
+        <div class="max-w-6xl mx-auto px-5 relative z-10">
           <div class="flex flex-col mx-auto text-center max-w-3xl">
             <h1 class="font-bold text-white text-3xl sm:text-4xl lg:text-5xl">
               Cloud <span class="text-primary">Security</span> Posture Management in <span class="text-primary">360 Degree</span>.
@@ -420,9 +419,9 @@
             >
               <div class="flex items-center p-1">
                 <input type="email" placeholder="Enter email" class="flex-1 w-full bg-transparent text-white focus:outline-none focus:border-transparent border-transparent ring-transparent focus:ring-transparent">
-                <button class="primary-button">
+                <a href="./trial.html" class="primary-button">
                     <span class="px-5 py-2.5 inline-block">Start Free</span>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -440,8 +439,8 @@
       </section>
 
       <!-- partners -->
-      <section class="py-8  px-5">
-        <div class="w-full relative max-w-6xl mx-auto">
+      <section class="py-8 px-5">
+        <div class="w-full relative max-w-5xl mx-auto">
           <img src="./images/shapes/shape-1.png" class="w-full object-contain h-auto" alt="">
           <div 
           class="absolute rounded-full w-20 h-20 lg:w-28 lg:h-28 flex items-center justify-center overflow-hidden bg-gradient-to-t from-[#15161A] to-[#13161D] left-1/2 -translate-x-1/2 bottom-5 z-10 -ml-2 lg:-ml-3"
@@ -454,7 +453,7 @@
           </div>
         </div>
         <div 
-        class="max-w-7xl mx-auto rounded-3xl"
+        class="max-w-6xl mx-auto rounded-3xl"
         style="border: solid 1px transparent;
               background-image: linear-gradient(#07090D, #07090D), radial-gradient(circle at top left, #FFFFFF4A,#FFFFFF00);
               background-origin: border-box;
@@ -478,6 +477,10 @@
         <div class="absolute -z-10 -top-60 inset-x-0 w-full h-auto">
           <img src="./images/shapes/shape-2.png" class="w-full h-auto object-contain" alt="">
         </div>
+
+        <div class="absolute top-96 inset-x-0 z-10">
+              <img src="./images/steps/gradient-1.png" class="w-full h-full object-fill" alt="">
+            </div>
         <div class="max-w-lg mx-auto text-center relative z-10">
           <div class="text-center">
             <h2 class="text-3xl lg:text-4xl leading-tight text-white font-bold text-center">The only <span class="text-primary">all-in-one</span> cloud security solution</h2>
@@ -491,7 +494,7 @@
 
         </div>
 
-        <div class="max-w-7xl mx-auto pt-12 lg:pt-32 relative">
+        <div class="max-w-6xl mx-auto pt-12 lg:pt-32 relative">
 
           <div 
             class="absolute right-full top-0 bottom-0 w-0.5 h-full -z-10"
@@ -502,9 +505,7 @@
 
           <!-- step 1 -->
           <div class="md:flex items-center justify-between relative">
-            <div class="absolute top-0 -inset-x-64 z-10">
-              <img src="./images/steps/gradient-1.png" class="w-full h-full object-fill" alt="">
-            </div>
+            
             <div class="flex items-center space-x-5">
               <div class="relative">
                 <img src="./images/steps/step-line-one.png" alt="">
@@ -542,9 +543,9 @@
 
           <!-- step 3 -->
           <div class="md:flex items-center justify-between  mt-10 relative">
-            <div class="absolute top-0 -inset-x-40 h-full w-full -z-10">
+            <!-- <div class="absolute top-0 -inset-x-40 h-full w-full -z-10">
               <img src="./images/steps/gradient-2.png" class="w-full h-full object-fill" alt="">
-            </div>
+            </div> -->
             <div class="flex items-center space-x-5">
               <div class="relative">
                 <img src="./images/steps/step-line-3.png" alt="">
@@ -661,6 +662,7 @@
       </section>
 
 
+      <!-- clouds that we protect -->
       <section class="py-12 px-5 relative">
         <div class="absolute inset-x-0 bottom-0 -z-10 h-full">
           <img src="./images/gradient-222.png" class="w-full h-auto object-contain" alt="">
@@ -699,6 +701,224 @@
         </div>
       </section>
 
+      <section class="py-12 px-5">
+        
+        <div 
+        class="w-full rounded-3xl border border-gray-700 px-6 py-16 sm:px-10 lg:p-16 max-w-6xl mx-auto "
+        style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+        >
+          <div class="md:flex items-center">
+            <div class="w-full md:w-1/3 md:pr-5 lg:pr-10 border-b border-b-gray-600 md:border-b-transparent md:border-r  md:border-r-gray-600">
+              <h3 class="text-white font-semibold text-4xl text-center md:text-left">
+                80%
+              </h3>
+              <p class="uppercase text-base text-white mt-5 pb-7  text-center md:text-left">
+                REDUCTION IN <br> VULNERABILITY NOISE
+              </p>
+              <hr class="w-1/2 border-gray-600 mb-7 mx-auto md:mr-auto md:ml-0">
+              <h3 class="text-white font-semibold text-4xl text-center md:text-left">
+                02
+              </h3>
+              <p class="uppercase text-base text-white mt-5 pb-7 text-center md:text-left">
+                SECONDS TO DETECT <br>THREATS
+              </p>
+            </div>
+            <div class="w-full md:w-2/3 md:pl-8 lg:pl-16 pt-16 md:pt-0">
+              <img src="./images/quote-light.png" class="w-10 object-contain" alt="">
+              <p class="text-white mt-5 mb-6">
+                What truly sets Meghops apart is their commitment to excellence. The end result of their work exceeded my expectations. They delivered high-quality results on time and within budget.
+              </p>
+              <img src="./images/logos/aamarpay_logo.png" class="h-9 object-contain mb-3" alt="">
+              <p class=" text-sm mb-6 text-white">Senior Infrastructure Security Engineer</p>
+              <a href="#" class="inline-flex items-center space-x-2 py-3 px-5 rounded-2xl border border-primary bg-dark hover:bg-primary transition text-white font-semibold text-xs">
+                <span>Ready case study</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div 
+        class="py-24 sm:py-32"
+        x-data="{posts: []}"
+        x-init="
+        gql(GET_USER_ARTICLES, { page: 0 })
+        .then(result => {
+             var queryPosts = result.data.publication.posts.edges
+              
+             posts = queryPosts
+          }).catch(err => {console.log(err)});
+        "
+      >
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">From the <span class="text-primary">blog</span></h2>
+            <p class="mt-2 text-lg leading-8 text-white">Learn how to grow your business <br> with our expert advice.</p>
+          </div>
+          <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <template x-for="post in posts">            
+              <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                <img :src="post.node.coverImage.url" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+        
+                <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                  <div class="flex items-center space-x-2">
+                    <img src="./images/icons/calendar-icon.png" class="h-6" alt="">
+                    <time datetime="2020-03-16" class="mr-8" x-text="moment(post.node.publishedAt).format('MMM Do YY')">Mar 16, 2020</time>
+                  </div>
+
+                </div>
+                <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                  <a :href="post.node.url">
+                    <span class="absolute inset-0"></span>
+                    <span x-text="post.node.title"></span>
+                  </a>
+                </h3>
+              </article>
+            </template>
+          </div>
+        </div>
+      </div>
+        
+      </section>
+
+      <section class="py-12 mt-12 lg:mt-20 px-5">
+        <div 
+          class="max-w-6xl mx-auto"
+        >
+          <div 
+            class="w-full rounded-3xl"
+            style="border: solid 1px transparent;
+              background-image: linear-gradient(#07090D, #07090D), radial-gradient(circle at top left, #E72927,#88698E);
+              background-origin: border-box;
+              background-clip: content-box, border-box;"
+          >
+            <div 
+              class="sm:p-10 px-5 py-10"
+              x-data="{tab: 'compliance'}"
+            >
+              <div class="flex items-center space-x-5 overflow-x-auto min-w-full">
+                <button 
+                  class="rounded-2xl flex-shrink-0 inline-block truncate py-3 px-5  text-sm font-semibold border transition hover:border-primary hover:text-primary"
+                  :class="[tab === 'compliance' ? 'text-primary border-primary' : 'text-white border-white/20']"
+                  @click="tab = 'compliance'"
+                  style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+                >
+                  Automated Compliance
+                </button>
+                <button 
+                  class="text-white flex-shrink-0 border-white/20 rounded-2xl inline-block truncate py-3 px-5  text-sm font-semibold border transition hover:border-primary hover:text-primary"
+                  :class="[tab === 'log' ? 'text-primary border-primary' : 'text-white border-white/20']"
+                  @click="tab = 'log'"
+                  style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+                >
+                  Log analyzer
+                </button>
+                <button 
+                  class="text-white flex-shrink-0 border-white/20 rounded-2xl inline-block truncate py-3 px-5  text-sm font-semibold border transition hover:border-primary hover:text-primary"
+                  :class="[tab === 'cost' ? 'text-primary border-primary' : 'text-white border-white/20']"
+                  @click="tab = 'cost'"
+                  style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+                >
+                Cost optimization
+                </button>
+                <button 
+                  class="text-white flex-shrink-0 border-white/20 rounded-2xl inline-block truncate py-3 px-5  text-sm font-semibold border transition hover:border-primary hover:text-primary"
+                  :class="[tab === 'meghEye' ? 'text-primary border-primary' : 'text-white border-white/20']"
+                  @click="tab = 'meghEye'"
+                  style="background: linear-gradient(251.06deg, rgba(255, 255, 255, 0.1) -0.58%, rgba(255, 255, 255, 0.08) 93.77%);"
+                >
+                MeghEye
+                </button>
+              </div>
+
+              <div class="mt-8 sm:mt-16">
+                <!-- compliance -->
+                <div x-show="tab === 'compliance'" class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+                  <div class="md:w-1/2 w-full md:pr-8 lg:pr-12">
+                    <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">Automated Compliance</h2>
+                    <p class="text-white mb-4 md:max-w-sm ">MeghOps offers an automated compliance solution for cloud using AI, that helps organizations comply with industry standards like CIS, PCI, and HIPAA.</p>
+                    <a href="./trial.html" class="primary-button mt-5 cursor-pointer">
+                      <span class="px-6 py-3 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img src="./images/automated_compliance.png" alt="">
+                  </div>
+                </div>
+                <!-- log -->
+                <div x-show="tab === 'log'" class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+                  <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                    <img src="./images/log-analyzer.png" alt="">
+                  </div>
+                  <div class="md:w-1/2 w-full md:pl-8 lg:pl-12">
+                    <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">Log Analyzer</h2>
+                    <p class="text-white mb-4 md:max-w-sm ">Log Analyzer is a powerful solution that enables organizations to analyze and understand their log data, providing valuable insights into the security and performance of their cloud environment.</p>
+                    <a href="./trial.html" class="primary-button mt-5 cursor-pointer">
+                      <span class="px-6 py-3 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+      
+                </div>
+                <!-- cost -->
+                <div x-show="tab === 'cost'" class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+                  <div class="md:w-1/2 w-full md:pr-8 lg:pr-12">
+                    <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">Cost optimization</h2>
+                    <p class="text-white mb-4 md:max-w-sm ">Cost Optimization solution uses AI to forecast and helps organizations to better understand and manage their cloud costs by providing detailed view of all cloud resources and usage, identifying opportunities for cost savings, and providing automated cost optimization recommendations.</p>
+                    <a href="./trial.html" class="primary-button mt-5 cursor-pointer">
+                      <span class="px-6 py-3 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img src="./images/cost-optimization.png" alt="">
+                  </div>
+                </div>
+                <!-- megheye -->
+                <div x-show="tab === 'meghEye'" class="flex flex-col md:flex-row items-center md:justify-between w-full gap-6">
+                  <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                    <img src="./images/megheye.png" alt="">
+                  </div>
+                  <div class="md:w-1/2 w-full md:pl-8 lg:pl-12">
+                    <h2 class="text-white text-lg sm:text-4xl font-semibold mb-8">MeghEye</h2>
+                    <p class="text-white mb-4 md:max-w-sm ">MeghEye is an advanced security monitoring solution that detects and alerts on potential security threats in your cloud environment.</p>
+                    <a href="./trial.html" class="primary-button mt-5 cursor-pointer">
+                      <span class="px-6 py-3 inline-flex items-center space-x-2">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
 
@@ -707,11 +927,11 @@
         <div class="max-w-7xl mx-auto px-5 py-12">
           <div class="lg:flex lg:space-x-5 space-y-10 lg:space-y-0 justify-between">
             <div>
-              <img src="./images/logo-new.png" class="h-8" alt="">
+              <img src="./images/logo-new.png" class="h-12" alt="">
               <p class="mt-4 text-lg text-gray-300">
                 MeghOps is a provider of  cloud <br> security and compliance <br> solutions.
               </p>
-              <a href="#" class="primary-button mt-5">
+              <a href="./trial.html" class="primary-button mt-5">
                 <span class="px-6 py-3 inline-flex items-center space-x-2">
                   <span>Get started</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -796,6 +1016,52 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+
+
+      async function gql(query, variables={}) {
+        const apiKey = '2c98d24f-5bd6-4f91-9249-a705b341160e'; 
+          const data = await fetch('https://gql.hashnode.com', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': apiKey,
+              },
+              body: JSON.stringify({
+                  query,
+                  variables
+              })
+          });
+
+          return data.json();
+      }
+
+      const GET_USER_ARTICLES = `
+        query Publication {
+          publication(host: "blog.meghops.io") {
+            isTeam
+            title
+            posts(first: 3) {
+              edges {
+                node {
+                  title
+                  brief
+                  url
+                  publishedAt
+                  coverImage {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      `;
+      </script>
+  
+  <script src="https://momentjs.com/downloads/moment.min.js" ></script>
 
 
 

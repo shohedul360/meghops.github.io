@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch:css": "npx tailwindcss -i ./tailwind.css -o ./main.css --watch",
+    "watch:css": "npx tailwindcss -i ./tailwind.css -o ./main-2.css --watch",
     "build:css": "npx tailwindcss -i ./tailwind.css -o ./main-2.css --minify"
   },
   "devDependencies": {
