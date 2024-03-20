@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Ubuntu', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
       colors: {
         green: colors.emerald,
